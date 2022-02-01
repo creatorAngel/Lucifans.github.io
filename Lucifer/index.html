@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <title>Welcome Human | Lucifer Fansite</title>
+    <style>
+      * {
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        
+      }
+      .navbar {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* background-color: black; */
+        border-radius: 50px;
+        justify-content: center;
+      }
+
+      .navbar ul {
+        overflow: hidden;
+        margin: 0px 20px;
+      }
+      .navbar::before {
+        content: " " ;
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        z-index: -1;
+      }
+      .navbar li {
+        float: left;
+        list-style: none;
+        margin: 0px 8px;
+      }
+      .navbar li a {
+        display: block;
+        border-radius: 50px;
+        font-family: "Poppins", sans-serif;
+        padding: 0px 50px;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+      }
+      .navbar li a:hover {
+        background-color: white;
+        color: black;
+      }
+      .search {
+        float: right;
+        color: white;
+        padding: 0px 2px;
+        margin: 0px 5px 0px 66px;
+      }
+      .navbar input {
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 3px 10px;
+      }
+      #logo {
+        margin: 0px 12px 0px 0px;
+      }
+      #logo img {
+        float: left;
+        width: 60%;
+        height: 40px;
+        padding: 0px 10px;
+        margin: 10px 100px 10px 20px;
+      }
+      #slogo {
+        float: left;
+        width: 20px;
+        height: 20px;
+        margin: 5px 5px;
+        padding: 0px 0px;
+      }
+      /* HOME SECTION */
+      #home {
+        background: maroon;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px;
+        margin: 0px 0px;
+        align-items: left;
+        justify-content: center;
+      }
+      #homee {
+        content: " ";
+        background-color: maroon;
+        background-image: url(./img13.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        margin-left: 680px;
+        width: 50%;
+        opacity: 1;
+        z-index: -2;
+      }
+      
+      #home h1 {
+        text-align: left;
+        margin: 0px 30px;
+        margin-top: 150px;
+      }
+      #home p {
+        text-align: left;
+        margin: 6px 32px;
+        font-size: 1.2rem;
+        font-family: "Poppins", sans-serif;
+      }
+      .h-primary {
+        font-size: 3.2rem;
+        padding: 0px 0px;
+        font-family: "Poppins", sans-serif;
+      }
+      .h-secondary {
+        font-size: 2.2rem;
+        padding: 0px 0px;
+        margin: 0px 0px;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+      }
+      .h-tertiary {
+        font-size: 0.8rem;
+        padding: 0px 0px;
+        margin: 5px 0px;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+      }
+      /* end of home */
+
+      /* ABOUT SECTION */
+      .about{
+        height: 250px;
+        width: 100%;
+        padding-top: 80px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(./ban12.jpg);
+        display: block;
+        text-decoration: none;
+      }
+      .about h1{
+        color: white;
+        font-size: 3.2rem;
+        padding: 0px 0px;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /*CONTACT SECTION*/
+      #contact {
+        background: black;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px;
+        margin: 0px 0px;
+        align-items: right;
+        justify-content: center;
+      }
+      #contactt {
+        content: " ";
+        background-color: maroon;
+        background-image: url(./img8.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        margin-right: 674px;
+        width: 50%;
+        opacity: 1;
+        z-index: -2;
+      }
+      #contact h1 {
+        color: maroon;
+        text-align: left;
+        margin: 0px 50px;
+        margin-top: 0px;
+      }
+      #contact p {
+        color: maroon;
+        text-align: left;
+        margin: 9px 52px;
+        font-size: 1.2rem;
+        font-family: "Poppins", sans-serif;
+      }
+       /* Create two equal columns that floats next to each other */
+       .columnn {
+        float: right;
+        width: 50%;
+        padding: 0px;
+        height: 695px;
+        z-index: -2;
+}
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        z-index: -2;
+}
+      .btnn1 {
+        padding: 2px 20px;
+        margin: 30px 30px 0px 50px;
+        width: 32%;
+        height: 45px;
+        font-size: 1rem;
+        font-family: "Poppins", sans-serif;
+        text-align: left;
+        background-color: rgb(179, 3, 3);
+        border: 2px solid black;
+      }
+      .btnn1 a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+      }
+      .btnn1:hover {
+        background-color: rgb(255, 255, 255);
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .btnn1:hover a{
+        color: rgb(0, 0, 0);
+      }
+      .btnn2 {
+        padding: 2px 20px;
+        margin: 0px 0px 0px 0px;
+        width: 32%;
+        height: 45px;
+        font-size: 1rem;
+        font-family: "Poppins", sans-serif;
+        text-align: left;
+        background-color: rgb(179, 3, 3);
+        border: 2px solid black;
+      }
+      .btnn2 a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+      }
+      .btnn2:hover {
+        background-color: rgb(255, 255, 255);
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .btnn2:hover a{
+        color: black;
+      }
+      .flexx{
+        flex-direction: row;
+      }
+      .socials{
+        margin: 34px 50px 0 20px;
+        height: 100px;
+        border-radius: 50px;
+      }
+      .socials img{
+        height: 40px;
+        margin: 20px 0 0 30px;
+      }
+      /* end of contact */
+
+      /* CASES SECTION */
+      .cases{
+        height: 250px;
+        width: 100%;
+        padding-top: 80px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(./ban6.jpg);
+        display: block;
+        text-decoration: none;
+      }
+      .cases h1{
+        color: white;
+        font-size: 3.2rem;
+        padding: 0px 0px;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* end of cases */
+      .p-footer {
+        font-size: 1.2rem;
+        padding: 0px 0px;
+        margin: 10px 0px;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+      }
+      .btn {
+        padding: 2px 20px;
+        margin: 45px 30px;
+        width: 77%;
+        height: 45px;
+        font-size: 1.1rem;
+        font-family: "Poppins", sans-serif;
+        text-align: left;
+        background-color: rgb(0, 0, 0);
+        border: 2px solid black;
+      }
+      .btn a{
+        text-decoration: none;
+        color: rgb(179, 5, 5) ;
+      }
+      .btn:hover {
+        background-color: rgb(179, 5, 5);
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .btn:hover a{
+        color: black;
+      }
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+        padding: 0px;
+        height: 695px;
+        z-index: -2; /* Should be removed. Only for demonstration */
+}
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        z-index: -2;
+}
+.footer{  
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+}
+.footer1{
+  align-items: left;
+  float: left;
+  margin: 22px 0 0 30px;
+}
+.footer2{
+  margin: 0 0 0 650px;
+  align-items: right;
+  float: right;
+  height: 70px;
+  background-color:rgb(0, 0, 0);
+}
+.footer2 img{
+  float: right;
+  height: 30px;
+  margin: 20px 0px 0px 98px;
+}
+/* scrollbar */
+::-webkit-scrollbar{
+  width: 5px;;
+}
+::-webkit-scrollbar-track{
+  background-color: white;
+}
+::-webkit-scrollbar-thumb{
+  background-color: maroon;
+}
+#loading{
+  position:fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff url('angel.gif') no-repeat center;
+  z-index: 999;
+}
+    </style>
+  </head>
+  <body onload="myFunc()">
+
+    <div id="loading"></div>
+    <nav class="navbar">
+      <div id="logo">
+        <a href="index.html"><img src="lucif (2).png" /></a>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutt">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#casess">Cases</a></li>
+
+        <div class="search">
+          <img src="searchlogo.png" id="slogo" />
+          <input type="text" name="search" id="search" placeholder="Search"/>
+        </div>
+      </ul>
+    </nav>
+    <!-- <section id="home"> -->
+      <div class="row">
+        <div class="column" id="home">
+          <h1 class="h-primary">Welcome Humans!</h1>
+      <p>
+        Here you can visit the Fansite for the web series Lucifer<br />
+        Now what is it you desire?
+      </p>
+
+      <button class="btn"><a href="about.html">Know more About Us</a></button>
+        </div>
+        <div class="column" style="background-color:#bbb;" id="homee"> 
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- for about section  -->
+    <section class="click">
+    <a href="about.html" class="about" id="aboutt">
+      <h1>About the Show Lucifer</h1>
+    </a>
+    </section>
+<!-- for the contact section  -->
+  <div class="row">
+    <div class="columnn"  id="contact">
+      <h1 class="h-primary">Contact Us, Lucifans!</h1>
+  <p>
+    Drop your questions in our socials or any special requests.<br/>
+  (Devil's little Helper)
+  </p>
+<div class="flexx">
+  <button class="btnn1"><a href="about.html"> More About Us</a></button>
+  <button class="btnn2"><a href="about.html">Collaborate with Us</a></button>
+</div>
+<div class="flexx">
+  <section class="socials">
+    <a href="#" class="icon" id="1"><img src="ig.png" alt="instagram"></a>
+    <a href="#" class="icon" id="2"><img src="youtube.png" alt=""></a>
+    <a href="#" class="icon" id="3"><img src="gmail.png" alt=""></a>
+   </section>
+</div>
+    </div>
+    <div class="column" style="background-color:#bbb;" id="contactt"> 
+      
+    </div>
+  </div>
+</div>
+<!-- for cases section  -->
+<section class="click">
+  <a href="cases.html" class="cases" id="casess">
+    <h1>All cases in the show</h1>
+  </a>
+  </section>
+<!-- for the footer -->
+    <div class="footer">
+    <footer>
+    <div class="footer1">
+      <p class="h-tertiary">Copyright © 2021 creator.angelika</p>
+    </div> 
+    <div class="footer2">
+      <a href="#" class="icon" id="1"><img src="ig.png" alt="instagram"></a>
+       <a href="#" class="icon" id="2"><img src="youtube.png" alt=""></a>
+       <a href="#" class="icon" id="3"><img src="gmail.png" alt=""></a>
+    </div>
+      </footer>
+    </div>
+
+<script>
+  var preloader = document.getElementById('loading');
+  function myFunc(){
+    preloader.style.display = 'none'
+  }
+</script>    
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <title>Contact | Lucifer Fansite</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* contact form */
+      section {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: black;
+      }
+      section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: url(img8.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 600px;
+        margin-left: 690px;
+        /* background: chartreuse; */
+        color: white;
+        justify-content: top;
+        align-items: left;
+        z-index: 1;
+      }
+      .heading {
+        margin-left: 130px;
+        font-size: 60px;
+        font-weight: 300;
+      }
+      .sub {
+        margin-left: 70px;
+        font-size: 20px;
+        font-weight: 300;
+      }
+      .form{
+        margin-top: 30px;
+      }
+      .input {
+        display: flex;
+        flex-direction: column;
+      }
+      .yup{
+        border-radius: 25px;
+        color: white;
+        border: none;
+        font-size: 15px;
+        background-color: black;
+        padding: 10px 10px;
+        border: 2px solid rgb(112, 0, 0);
+        margin-top: 30px;
+        transition:  border-color 0.3s ease-out;
+      }
+      .form .yup::placeholder{
+        color: white;
+        font-size: 15px;
+      }
+      .form textarea.yup{
+        height: 140px;
+        resize: none;
+      }
+      .btn{
+        margin-top: 30px;
+        margin-left: 220px;
+        padding: 10px 20px;
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 20px;
+        background-color: rgb(167, 3, 3);
+        border: 1px solid maroon;
+        cursor: pointer;;
+      }
+      .btn a{
+        color: black;
+        text-decoration: none;
+      }
+      .btn a:hover{
+        color: maroon;
+      }
+      .btn:hover{
+        background-color: white;
+        transition: background-color 0.5s ease-in-out;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <!-- contact form -->
+    <section>
+      <div class="container">
+        <h1 class="heading">Contact Us</h1>
+        <p class="sub">Look who wants to speak with the devil indeed</p>
+
+        <div class="form">
+          <form action="mailto:angelikathomas26@gmail.com">
+            <div class="input">
+              <input type="text" placeholder="Name" required  class="yup" />
+            </div>
+            <div class="input">
+              <input type="email" placeholder="Email" required  class="yup"/>
+            </div>
+            <div class="input">
+              <textarea placeholder="Write your message.." class="yup"></textarea>
+            </div>
+            <div class="submit-btn">
+              <button type="submit" class="btn"><a href="#"> Send Message</a></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

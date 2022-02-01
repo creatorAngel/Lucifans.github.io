@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <title>About | Lucifer Fansite</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* background-color: black; */
+        border-radius: 50px;
+        justify-content: center;
+      }
+
+      .navbar ul {
+        overflow: hidden;
+        margin: 0px 20px;
+      }
+      .navbar::before {
+        content: " ";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        z-index: -1;
+      }
+      .navbar li {
+        float: left;
+        list-style: none;
+        margin: 0px 8px;
+      }
+      .navbar li a {
+        display: block;
+        border-radius: 50px;
+        font-family: "Poppins", sans-serif;
+        padding: 0px 50px;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+      }
+      .navbar li a:hover {
+        background-color: white;
+        color: black;
+      }
+      .search {
+        float: right;
+        color: white;
+        padding: 0px 2px;
+        margin: 0px 5px 0px 66px;
+      }
+      .navbar input {
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 3px 10px;
+      }
+      #logo {
+        margin: 0px 12px 0px 0px;
+      }
+      #logo img {
+        float: left;
+        width: 60%;
+        height: 40px;
+        padding: 0px 10px;
+        margin: 10px 80px 10px 55px;
+      }
+      #slogo {
+        float: left;
+        width: 20px;
+        height: 20px;
+        margin: 5px 5px;
+        padding: 0px 0px;
+      }
+
+      .h-primary {
+        font-size: 3.2rem;
+        padding: 0px 0px;
+        font-family: "Poppins", sans-serif;
+      }
+      .h-secondary {
+        font-size: 4.2rem;
+        padding: 0px 0px;
+        margin: 60px 0px 20px 120px;
+        font-family: "Passions Conflict", cursive;
+        text-align: center;
+        font-weight: 200;
+      }
+      .h-tertiary {
+        font-size: 1rem;
+        padding: 0px 0px;
+        margin: 5px 40px 0px 80px;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+      }
+      .p-footer {
+        font-size: 1.2rem;
+        padding: 0px 0px;
+        margin: 10px 0px;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+      }
+      .banner {
+        display: flex;
+        flex-direction: row;
+        height: 250px;
+        padding-top: 70px;
+        background-color: maroon;
+        color: black;
+        font-family: "Passions Conflict", cursive;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+      .char {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        position: relative;
+      }
+      .pic {
+        padding-top: 20px;
+        height: 300px;
+        width: 300px;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        color: white;
+      }
+      #lucifer {
+        border: 2px solid black;
+        margin-top: 1px;
+      }
+      #chloe {
+        margin-top: 1px;
+      }
+      #left-align {
+        left: 0;
+      }
+      #right-align {
+        right: 0;
+      }
+      .flexx {
+        flex-direction: row;
+      }
+      .socials {
+        margin: 40px 50px 0 20px;
+        height: 100px;
+        border-radius: 50px;
+      }
+      .socials img {
+        height: 40px;
+        margin: 20px 0 0 30px;
+      }
+      /* scrollbar */
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: white;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: maroon;
+      }
+    </style>
+  </head>
+  <body onload="myFunc()">
+    <div id="loading"></div>
+    <nav class="navbar">
+      <div id="logo">
+        <a href="index.html"><img src="lucif (2).png" /></a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cases.html">Cases</a></li>
+
+        <div class="search">
+          <img src="searchlogo.png" id="slogo" />
+          <input type="text" name="search" id="search" placeholder="Search" />
+        </div>
+      </ul>
+    </nav>
+    <div class="banner">
+      <p class="h-primary">~ Meet The Characters ~</p>
+    </div>
+
+    <!-- CHARACTERS START HERE -->
+
+    <!-- LUCIFER -->
+    <div class="row" id="lucifer">
+      <img src="ll.png" class="pic" id="left-align" />
+      <div class="char">
+        <h1 class="h-secondary">Lucifer Samael Morningstar</h1>
+        <p class="h-tertiary">
+          Lucifer Morningstar (real name: Samael, the Lightbringer). He is one
+          of the older angels and formerly the infamous ruler of Hell. He is
+          commonly known as the Devil or Satan by humans. He also left hell and
+          owns a night club in LA and now he works with a homicide detective
+          Chole. Later on he had a daughter named Rory or Aurora with detective
+          Decker. Watch the show for more info. (He's not actually evil!)
+        </p>
+      </div>
+      <div class="flexx">
+        <section class="socials">
+          <a href="#" class="icon" id="1"
+            ><img src="ig.png" alt="instagram"
+          /></a>
+          <a href="#" class="icon" id="2"><img src="youtube.png" alt="" /></a>
+          <a href="#" class="icon" id="3"><img src="gmail.png" alt="" /></a>
+        </section>
+      </div>
+    </div>
+
+    <!-- CHLOE -->
+    <div class="row" id="chloe">
+      <div class="flexx">
+        <section class="socials">
+          <a href="#" class="icon" id="1"
+            ><img src="ig.png" alt="instagram"
+          /></a>
+          <a href="#" class="icon" id="2"><img src="youtube.png" alt="" /></a>
+          <a href="#" class="icon" id="3"><img src="gmail.png" alt="" /></a>
+        </section>
+      </div>
+      <div class="char">
+        <h1 class="h-secondary">Chloe Decker</h1>
+        <p class="h-tertiary">
+          Chloe Decker is a homicide detective working in Los Angeles as a
+          member of the L.A.P.D.. While investigating a murder at the Lux
+          nightclub, Chloe encounters Lucifer Morningstar, the former ruler of
+          Hell, who is was now living on Earth. Chloe is a major part of this
+          show and is the person who was responsible for changing Lucifer. She's
+          also a mother to Trixie who she had with her former partner Daniel.
+        </p>
+      </div>
+      <img src="chloe.png" class="pic" id="right-align" />
+    </div>
+
+    <!-- Trixie -->
+    <div class="row" id="lucifer">
+      <img src="trix.png" class="pic" id="left-align" />
+      <div class="char">
+        <h1 class="h-secondary">Trixie Espinoza</h1>
+        <p class="h-tertiary">
+          Beatrice Espinoza, better known as Trixie, is a central character in
+          Lucifer. She is the only daughter of Chloe Decker and Detective Dan
+          Espinoza. She is a very excited, happy young lady that loves meeting
+          new people, is not the slightest bit shy, and loves hugs.
+        </p>
+      </div>
+      <div class="flexx">
+        <section class="socials">
+          <a href="#" class="icon" id="1"
+            ><img src="ig.png" alt="instagram"
+          /></a>
+          <a href="#" class="icon" id="2"><img src="youtube.png" alt="" /></a>
+          <a href="#" class="icon" id="3"><img src="gmail.png" alt="" /></a>
+        </section>
+      </div>
+    </div>
+
+    <!-- RORY -->
+    <div class="row" id="chloe">
+      <div class="flexx">
+        <section class="socials">
+          <a href="#" class="icon" id="1"
+            ><img src="ig.png" alt="instagram"
+          /></a>
+          <a href="#" class="icon" id="2"><img src="youtube.png" alt="" /></a>
+          <a href="#" class="icon" id="3"><img src="gmail.png" alt="" /></a>
+        </section>
+      </div>
+      <div class="char">
+        <h1 class="h-secondary">Aurora Morningstar</h1>
+        <p class="h-tertiary">
+          Aurora Morningstar, commonly known as Rory, is the daughter of Chloe
+          Decker and Lucifer Morningstar. She is an Angel, specifically a
+          Nephilim, that was raised solely by her Mother who deliberately kept
+          Rory oblivious to Lucifer's purposes for not being involved in her
+          life. She decided to find her father and when she did , she got
+          everything she ever asked for. (~The badass Angel~)
+        </p>
+      </div>
+      <img src="aurora.png" class="pic" id="right-align" />
+    </div>
+
+    <!-- AMENADIEL -->
+    <div class="row" id="lucifer">
+      <img src="amen.png" class="pic" id="left-align" />
+      <div class="char">
+        <h1 class="h-secondary">Amenadiel</h1>
+        <p class="h-tertiary">
+          Amenadiel is the eldest of all God's Angels, who serves as a central
+          character in Lucifer, originally serving as the main antagonist of
+          Season 1 before redeeming himself. Amenadiel starts seeing himself
+          liking humans and indeed became a good one. Being the eldest brother
+          he was always there for his brother Lucifer. He later had baby Charlie
+          with Dr. Linda Martin.
+        </p>
+      </div>
+      <div class="flexx">
+        <section class="socials">
+          <a href="#" class="icon" id="1"
+            ><img src="ig.png" alt="instagram"
+          /></a>
+          <a href="#" class="icon" id="2"><img src="youtube.png" alt="" /></a>
+          <a href="#" class="icon" id="3"><img src="gmail.png" alt="" /></a>
+        </section>
+      </div>
+    </div>
+
+    <!-- DANIEL -->
+    <div class="row" id="chloe">
+      <div class="flexx">
+        <section class="socials">
+          <a href="#" class="icon" id="1"
+            ><img src="ig.png" alt="instagram"
+          /></a>
+          <a href="#" class="icon" id="2"><img src="youtube.png" alt="" /></a>
+          <a href="#" class="icon" id="3"><img src="gmail.png" alt="" /></a>
+        </section>
+      </div>
+      <div class="char">
+        <h1 class="h-secondary">Daniel Espinoza</h1>
+        <p class="h-tertiary">
+          Daniel "Dan" Espinoza was a central character on Lucifer, who served
+          as a homicide detective in Los Angeles, working as a member of the
+          L.A.P.D. This leads him to interact with Lucifer Morningstar when
+          Lucifer decides to help the L.A.P.D. solve cases. He is father to
+          Trixie and is the ex-husband of Chloe. He later falls for Charlette
+          and after his death stays with her for eternity.
+        </p>
+      </div>
+      <img src="dan.png" class="pic" id="right-align" />
+    </div>
+
+    <!-- LINDA  -->
+    <div class="row" id="lucifer">
+      <img src="linda.png" class="pic" id="left-align" />
+      <div class="char">
+        <h1 class="h-secondary">Dr. Linda Martin</h1>
+        <p class="h-tertiary">
+          Linda Martin (born 1977) is a therapist living in Los Angeles and
+          serves as a central character in Lucifer. Throughout the series,
+          Lucifer Morningstar, the ruler of Hell, seeks her counsel on a
+          consistent basis, usually involving personal issues with Chloe Decker
+          or his family. She helps him to overcome the "evil" in him and helps
+          him see that the world needs the better side of Lucifer "the angel".
+        </p>
+      </div>
+      <div class="flexx">
+        <section class="socials">
+          <a href="#" class="icon" id="1"
+            ><img src="ig.png" alt="instagram"
+          /></a>
+          <a href="#" class="icon" id="2"><img src="youtube.png" alt="" /></a>
+          <a href="#" class="icon" id="3"><img src="gmail.png" alt="" /></a>
+        </section>
+      </div>
+    </div>
+
+    <!-- Mazikeen -->
+    <div class="row" id="chloe">
+      <div class="flexx">
+        <section class="socials">
+          <a href="#" class="icon" id="1"
+            ><img src="ig.png" alt="instagram"
+          /></a>
+          <a href="#" class="icon" id="2"><img src="youtube.png" alt="" /></a>
+          <a href="#" class="icon" id="3"><img src="gmail.png" alt="" /></a>
+        </section>
+      </div>
+      <div class="char">
+        <h1 class="h-secondary">Mazikeen Smith</h1>
+        <p class="h-tertiary">
+          Maze is a close friend and former lover of Lucifer, who helped him cut
+          off his angel wings. In the first season of Lucifer, Maze worked as a
+          bartender at Lucifer’s club Lux as well as his bodyguard and
+          concierge. Maze also got close to Lucifer’s brother Amenadiel and even
+          sacrificed her chance to return to hell to save him. Unable to return
+          to hell, Maze became a bounty hunter for the LAPD and has been ever
+          since.
+        </p>
+      </div>
+      <img src="maze.png" class="pic" id="right-align" />
+    </div>
+
+    <!-- Charlotte  -->
+    <div class="row" id="lucifer">
+      <img src="char.png" class="pic" id="left-align" />
+      <div class="char">
+        <h1 class="h-secondary">Charlotte Richards</h1>
+        <p class="h-tertiary">
+          Charlotte Richards was a cutthroat attorney who was murdered. Her body
+          was taken over by the Goddess, and after the mother of all creation
+          departed, Charlotte was inadvertedly restored to life. As she had been
+          stuck in Hell all this time, she decided to do better on her second
+          chance and not return there. She fell in love with Daniel and decided
+          to become a better but she soon died after that and they united again
+          after a lot of years in Heaven.
+        </p>
+      </div>
+      <div class="flexx">
+        <section class="socials">
+          <a href="#" class="icon" id="1"
+            ><img src="ig.png" alt="instagram"
+          /></a>
+          <a href="#" class="icon" id="2"><img src="youtube.png" alt="" /></a>
+          <a href="#" class="icon" id="3"><img src="gmail.png" alt="" /></a>
+        </section>
+      </div>
+    </div>
+
+    <!-- Ella  -->
+    <div class="row" id="chloe">
+      <div class="flexx">
+        <section class="socials">
+          <a href="#" class="icon" id="1"
+            ><img src="ig.png" alt="instagram"
+          /></a>
+          <a href="#" class="icon" id="2"><img src="youtube.png" alt="" /></a>
+          <a href="#" class="icon" id="3"><img src="gmail.png" alt="" /></a>
+        </section>
+      </div>
+      <div class="char">
+        <h1 class="h-secondary">Ella Lopez</h1>
+        <p class="h-tertiary">
+          Ella Lopez is a central character in Lucifer. She is the Los Angeles
+          Police Department's forensic scientist. A religious woman born and
+          raised in Detroit, Ella moved to Los Angeles (at the wish of
+          "Rae-Rae") after surviving a car crash and met Chloe Decker and
+          Lucifer Morningstar. She is kindest and sweetest character in this
+          series and loves hugs! (my personal fav)
+        </p>
+      </div>
+      <img src="ella.png" class="pic" id="right-align" />
+    </div>
+
+    <!-- EVE  -->
+    <div class="row" id="lucifer">
+      <img src="eve.png" class="pic" id="left-align" />
+      <div class="char">
+        <h1 class="h-secondary">EVE</h1>
+        <p class="h-tertiary">
+          Eve was created by God to be the second wife of Adam following the
+          banishment of his first wife, Lilith. While they lived in the Garden
+          of Eden, Eve was tempted by Lucifer Morningstar into having a
+          relationship, eventually forcing God to send her to Earth alongside
+          Adam and have them live out their days as the first Humans. She gave
+          birth to Cain and Abel before eventually dying and going to Heaven.
+        </p>
+      </div>
+      <div class="flexx">
+        <section class="socials">
+          <a href="#" class="icon" id="1"
+            ><img src="ig.png" alt="instagram"
+          /></a>
+          <a href="#" class="icon" id="2"><img src="youtube.png" alt="" /></a>
+          <a href="#" class="icon" id="3"><img src="gmail.png" alt="" /></a>
+        </section>
+      </div>
+    </div>
+
+    <!-- PIERCE  -->
+    <div class="row" id="chloe">
+      <div class="flexx">
+        <section class="socials">
+          <a href="#" class="icon" id="1"
+            ><img src="ig.png" alt="instagram"
+          /></a>
+          <a href="#" class="icon" id="2"><img src="youtube.png" alt="" /></a>
+          <a href="#" class="icon" id="3"><img src="gmail.png" alt="" /></a>
+        </section>
+      </div>
+      <div class="char">
+        <h1 class="h-secondary">Marcus Pierce</h1>
+        <p class="h-tertiary">
+          Marcus Pierce was an L.A.P.D. Lieutenant and the supervisor of Chloe
+          Decker, Dan Espinoza, and Ella Lopez, who served as the primary
+          antagonist. He and Chloe almost got married but later on it was
+          revealed he was just using her to become mortal again so it was
+          called-off.
+        </p>
+      </div>
+      <img src="pierce.png" class="pic" id="right-align" />
+    </div>
+
+
+    <script>
+      var preloader = document.getElementById("loading");
+      function myFunc() {
+        preloader.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
